@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Random terrain generator</title>
+        <link rel="stylesheet" href="./style/main.css">
+    </head>
+
+    <body>
+        <link rel="shortcut icon" href="#">
+
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "./build/three.module.js",
+                    "control": "./build/orbit_controls.js",
+                    "noise": "https://cdn.skypack.dev/simplex-noise",
+                    "dat.gui": "https://cdn.skypack.dev/dat.gui"
+                }
+            }
+        </script>
+
+        <script id="fragment_shader" type="x-shader/x-fragment" src="./shaders/fragment_shader.glsl"></script>
+        <script type="module" src="./scripts/scene.js"></script>
+    </body>
+</html>
